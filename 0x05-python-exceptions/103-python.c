@@ -3,6 +3,10 @@
 #include <floatobject.h>
 #include <bytesobject.h>
 
+// Function prototypes
+void print_python_bytes(PyObject *p);
+void print_python_float(PyObject *p);
+
 /**
  * print_python_list - Print information about a Python list.
  * @p: A pointer to a PyObject (Python list).
