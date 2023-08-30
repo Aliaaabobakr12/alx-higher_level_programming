@@ -3,14 +3,9 @@
 #include <floatobject.h>
 #include <bytesobject.h>
 
-// Function prototypes
 void print_python_bytes(PyObject *p);
 void print_python_float(PyObject *p);
 
-/**
- * print_python_list - Print information about a Python list.
- * @p: A pointer to a PyObject (Python list).
- */
 void print_python_list(PyObject *p) {
     Py_ssize_t size, alloc, i;
     const char *type;
@@ -37,10 +32,6 @@ void print_python_list(PyObject *p) {
     }
 }
 
-/**
- * print_python_bytes - Print information about a Python bytes object.
- * @p: A pointer to a PyObject (Python bytes).
- */
 void print_python_bytes(PyObject *p) {
     Py_ssize_t size, i;
     char *str;
@@ -65,10 +56,6 @@ void print_python_bytes(PyObject *p) {
     printf("\n");
 }
 
-/**
- * print_python_float - Print information about a Python float object.
- * @p: A pointer to a PyObject (Python float).
- */
 void print_python_float(PyObject *p) {
     double value;
 
